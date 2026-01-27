@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2015 Psychology Exam | AMU</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="2015.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h1><i class="fas fa-brain"></i> 2015 Psychology Exam</h1>
+                    <p class="lead">AMU Final Exam - Complete Questions with Solutions</p>
+                </div>
+                <a href="index.html" class="btn-home">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <!-- Statistics Panel -->
+        <div class="stats-panel">
+            <div class="row text-center">
+                <div class="col-md-3 col-6">
+                    <div class="stat-number" id="tf-score-2015">0</div>
+                    <div class="stat-label">T/F Correct</div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-number" id="mc-score-2015">0</div>
+                    <div class="stat-label">MC Correct</div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-number" id="match-score-2015">0</div>
+                    <div class="stat-label">Matching Correct</div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-number" id="total-score-2015">0%</div>
+                    <div class="stat-label">Overall Score</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation Tabs -->
+        <ul class="nav nav-tabs" id="examTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tf-tab" data-bs-toggle="tab" data-bs-target="#tf-section" type="button">Part I: True/False (0.5pt each)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="match-tab" data-bs-toggle="tab" data-bs-target="#match-section" type="button">Part II: Matching (0.5pt each)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="mc-tab" data-bs-toggle="tab" data-bs-target="#mc-section" type="button">Part III: Multiple Choice (1pt each)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="short-tab" data-bs-toggle="tab" data-bs-target="#short-section" type="button">Part IV: Short Answers</button>
+            </li>
+        </ul>
+        
+        <div class="tab-content" id="examContent">
+            <!-- True/False Section -->
+            <div class="tab-pane fade show active" id="tf-section" role="tabpanel">
+                <div class="section-header">
+                    <h2><i class="fas fa-check-circle"></i> Part I: True/False (0.5pt each)</h2>
+                    <p>Read the following statements and write "True" for correct statement and "False" if the statement is incorrect.</p>
+                </div>
+                <div id="tf-questions-container"></div>
+            </div>
+            
+            <!-- Matching Section -->
+            <div class="tab-pane fade" id="match-section" role="tabpanel">
+                <div class="section-header">
+                    <h2><i class="fas fa-link"></i> Part II: Matching (0.5pt each)</h2>
+                    <p>Match major reasons of forgetting listed under column "A" with corresponding theories of forgetting under column "B".</p>
+                </div>
+                <div id="match-container"></div>
+            </div>
+            
+            <!-- Multiple Choice Section -->
+            <div class="tab-pane fade" id="mc-section" role="tabpanel">
+                <div class="section-header">
+                    <h2><i class="fas fa-list-ol"></i> Part III: Multiple Choice (1pt each)</h2>
+                    <p>Choose the correct answer and write it on the answer sheet provided at end of the page.</p>
+                </div>
+                <div id="mc-questions-container"></div>
+            </div>
+            
+            <!-- Short Answer Section -->
+            <div class="tab-pane fade" id="short-section" role="tabpanel">
+                <div class="section-header">
+                    <h2><i class="fas fa-pen-alt"></i> Part IV: Short Answer</h2>
+                    <p>Write your answers on the separate answer sheet provided.</p>
+                </div>
+                <div id="short-answers-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>2015 AMU Psychology Final Exam | Interactive Preparation Tool</p>
+            <p><a href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="2015.js"></script>
+</body>
+</html>

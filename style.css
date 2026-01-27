@@ -1,0 +1,171 @@
+:root {
+    --primary-color: #4a148c;
+    --secondary-color: #7b1fa2;
+    --accent-color: #e91e63;
+    --success-color: #4caf50;
+    --warning-color: #ff9800;
+    --danger-color: #f44336;
+    --light-color: #f3e5f5;
+    --dark-color: #311b92;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+.header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 2.5rem 0;
+    margin-bottom: 2rem;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.header .lead {
+    opacity: 0.9;
+    font-size: 1.2rem;
+}
+
+.welcome-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid var(--accent-color);
+}
+
+.year-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.year-card {
+    display: flex;
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.year-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-color: var(--secondary-color);
+}
+
+.year-number {
+   /* background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;*/
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.year-number img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.year-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+.year-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.year-content li {
+    padding: 3px 0;
+    color: #555;
+}
+
+.year-content li:before {
+    content: "•";
+    color: var(--secondary-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.features, .instructions {
+    background-color: var(--light-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+}
+
+.features h3, .instructions h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.features ul, .instructions p {
+    margin-bottom: 0.5rem;
+}
+
+.features li {
+    padding: 5px 0;
+}
+
+.features i {
+    color: var(--success-color);
+    margin-right: 10px;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-top: 3rem;
+    border-radius: 15px 15px 0 0;
+}
+
+footer i {
+    color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .year-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .year-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .year-number {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        align-self: center;
+    }
+}
